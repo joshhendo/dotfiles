@@ -9,7 +9,7 @@ syntax on
 " Setting tabs to be replaced with spaces
 set tabstop=2 shiftwidth=2 expandtab
 
-# Display
+" Display
 set t_Co=256
 set background=dark
 highlight Comment ctermfg=cyan          " Make comments great again. Alternative 'darkblue'
