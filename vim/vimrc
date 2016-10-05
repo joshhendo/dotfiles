@@ -1,7 +1,5 @@
 set nocompatible                        " bye bye vi
-set number                              " big fan of knowing what line I'm on
 set cindent                             " as well as not doing manual indenting
-highlight Comment ctermfg=cyan          " Alternative 'darkblue'
 
 set nohlsearch                          " Stop highlighting once a search is done
 
@@ -10,3 +8,20 @@ syntax on
 
 " Setting tabs to be replaced with spaces
 set tabstop=2 shiftwidth=2 expandtab
+
+# Display
+set t_Co=256
+set background=dark
+highlight Comment ctermfg=cyan          " Make comments great again. Alternative 'darkblue'
+set number                              " big fan of knowing what line I'm on
+set ruler                               " Show current position
+set scrolloff=4                         " Scroll before reaching the top/bottom of the window
+set sidescrolloff=4                     " Scroll before reaching the left/right of the window
+colorscheme solarized
+
+" Search/autocomplete stuff
+set hlsearch   " Highlight search results
+set ignorecase " Enable case-insensitivity by default
+set infercase  " Fix case when doing case-insensitive auto-complete
+set smartcase  " Uppercase letters in search imply case-sensitivity
+set incsearch  " Search as characters are typed
