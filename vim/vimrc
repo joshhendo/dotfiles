@@ -1,1 +1,12 @@
+set nocompatible                        " bye bye vi
+set number                              " big fan of knowing what line I'm on
+set cindent                             " as well as not doing manual indenting
+highlight Comment ctermfg=cyan          " Alternative 'darkblue'
 
+set nohlsearch                          " Stop highlighting once a search is done
+
+filetype plugin indent on
+syntax on
+
+" Setting tabs to be replaced with spaces
+set tabstop=2 shiftwidth=2 expandtab
